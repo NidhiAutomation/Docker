@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<body>
+
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+</nav>
+
+<section>
+  <img class="mySlides" src="https://marvel-b1-cdn.bc0a.com/f00000000236551/dt-cdn.net/wp-content/uploads/2021/07/13429_ILL_DevOpsLoop.png"   width="1000" 
+     height="500"
+  <img class="mySlides" src="https://marvel-b1-cdn.bc0a.com/f00000000236551/dt-cdn.net/wp-content/uploads/2021/07/13429_ILL_DevOpsLoop.png"   
+</section>
+
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">DevOps</h2>
+  <p class="w3-opacity"><i>You build it. You run it.</i></p>
+  <p class="w3-justify"></p>
+</section>
+
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>John</p>
+    <img src="https://nightingalehq.ai/knowledgebase/glossary/what-is-aws/aws_hu17248e3907da8f65d42914bdc65b39f0_57887_1200x675_fill_box_smart1_2.png" alt="Random Name" style="width:100%">
+    <p>AWS</p>
+  </article>
+  <article class="w3-third">
+    <p>Paul</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Random Name" style="width:60%">
+    <p>Kubernetes</p>
+  </article>
+  <article class="w3-third">
+    <p>Ringo</p>
+    <img src="https://www.aviator.co/blog/wp-content/uploads/2023/01/terraform.png" alt="Random Name" style="width:100%">
+    <p>Terraform.</p>
+  </article>
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
+
