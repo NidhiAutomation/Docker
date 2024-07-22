@@ -6,4 +6,4 @@ RUN git clone https://github.com/NidhiAutomation/Docker.git
 
 RUN cd /usr/share/nginx/html ; rm -rf *
 
-RUN mv home/ubuntu/Docker/* /usr/share/nginx/html
+RUN mv /Docker/* /usr/share/nginx/html
